@@ -2,7 +2,7 @@
 
 ¡Bienvenido al repositorio del cuarto semestre!
 
-<img src="logo.png">
+<img src="logo.png" width="1000">
 
 
 ## Miembros del Equipo
