@@ -1,6 +1,8 @@
 # CodeGamers-4toSemestre
 
-¡Bienvenido al repositorio de nuestro equipo! 
+¡Bienvenido al repositorio del cuarto semestre!
+
+<img src="logo.png">
 
 
 ## Miembros del Equipo
