@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <section class="hero-animated d-flex align-items-center" id="hero-animated">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Nuevos diseños</h2>
+        </div>
+      </div>
+      <div class="row">
+        {% for remera in remeras %}
+        <div class="col-md-4">
+          <a href="/remera-{{remera.remera_id}}"><img src="/{{remera.Imagen}}"></a>
+          <h3><a href="/remera-{{remera.remera_id}}">{{remera.Titulo}}</a></h3>
+          <p>Precio: ${{remera.Precio}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

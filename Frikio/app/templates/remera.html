@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <section class="hero-animated d-flex align-items-center" id="hero-animated">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <h2>{{remera.Titulo}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/{{remera.Imagen}}">
+        </div>
+        <div class="col-md-6">
+          <p>{{remera.Descripcion}}</p>
+        </div>
+        <div class="col-md-3">
+          <p>Precio: ${{remera.Precio}}</p>
+           <a href="remera-{{remera.remera_id}}/add_to_cart"><button class="btn btn-primary add-to-cart">
+          <i class="fa fa-shopping-cart"></i> Agregar al carro
+        </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

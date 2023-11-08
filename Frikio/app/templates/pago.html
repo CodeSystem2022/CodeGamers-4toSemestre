@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section class="hero-animated d-flex align-items-center" id="hero-animated">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Ingresa a Mercado Pago y abona el costo de tu compra: {{total}}</p>
+          <a href="http://link.mercadopago.com.ar/frikio"><button class="btn btn-primary">Pagar {{total}} con Mercado Pago </button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

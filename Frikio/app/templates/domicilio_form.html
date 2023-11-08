@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero-animated d-flex align-items-center" id="hero-animated">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Datos de envío</h2>
+      </div>
+    </div>
+    <div class="row">
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="col-md-12">{{ form.nombre.label }}</div>
+        <div class="col-md-12">{{ form.nombre(size=60) }}</div>
+        <div class="col-md-12">{{ form.direccion.label }}</div>
+        <div class="col-md-12">{{ form.direccion(size=60) }}</div>
+        <div class="col-md-12">{{ form.ciudad.label }}</div>
+        <div class="col-md-12">{{ form.ciudad(size=30) }}</div>
+        <div class="col-md-12">{{ form.cp.label }}</div>
+        <div class="col-md-12">{{ form.cp(size=10) }}</div>
+        <div class="col-md-12">{{ form.provincia.label }}</div>
+        <div class="col-md-12">{{ form.provincia(size=30) }}</div>
+        <div class="col-md-12">{{ form.telefono.label }}</div>
+        <div class="col-md-12">{{ form.telefono(size=30) }}</div>
+        <div class="col-md-12">{{ form.submit() }}</div>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

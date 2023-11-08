@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <section class="hero-animated d-flex align-items-center" id="hero-animated">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Carro de compras</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          {% for remera in cart %}
+          <div class="row p-3">
+            <div class="col-md-1"><a href="/remera-{{remera.remera_id}}"><img src="/{{remera.Imagen}}" style="width: 60px;"></a></div>
+            <div class="col-md-5 p-3" style="background-color: #e0e0e0;"><a href="/remera-{{remera.remera_id}}"><p>{{remera.Titulo}}</p></a><a href="/cart/remera-{{remera.remera_id}}/remove">Eliminar</a></div>
+            <div class="col-md-2 p-3" style="background-color: #e0e0e0;"><p><a href="/cart/remera-{{remera.remera_id}}/add"><button class="btn btn-primary"> + </button></a> {{remera.cantidad}} <a href="/cart/remera-{{remera.remera_id}}/sub"><button class="btn btn-primary"> - </button></a></p></div>
+            <div class="col-md-2 p-3" style="background-color: #e0e0e0;"><p>${{remera.Precio * remera.cantidad}}</p></div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="col-md-2">
+          <h3>Resumen de la compra</h3>
+          <p>Productos: {{total}}</p>
+          <p>Envio: gratis</p>
+          <p><b>Total:</b> {{total}}</p>
+          <a href="/domicilio_envio"><button class="btn btn-primary">Finalizar compra</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
