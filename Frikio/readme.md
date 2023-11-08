@@ -172,7 +172,7 @@ Con el gestor de base de datos SQLite, una base de datos siempre es un único ar
 
 A continuación se encuentra el diagrama de entidad-relación (ER) de la base de datos:
 
-![](RackMultipart20231108-1-oi856k_html_8cadccb5e01ebadf.png)
+![](frikio_db.png)
 
 Este diseño de base de datos permite gestionar las páginas web, las remeras disponibles para la venta, los usuarios, los carritos de compras, las direcciones de envío y las órdenes de compra en una aplicación de comercio electrónico. Los diferentes modelos y relaciones entre ellos facilitan la gestión de datos y la interacción de los usuarios con la aplicación.
 
